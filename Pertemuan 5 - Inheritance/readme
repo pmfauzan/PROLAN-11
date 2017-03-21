@@ -1,0 +1,28 @@
+Tugas nya disuruh dikasih cerita dibagian akhir, jadi begini ceritanya ....
+
+Saat itu langit eropa sedang musim hujan, angin begitu kencang membahawa rintik hujan dan juga rindu darisetiap orang.
+panggil dia "Class Buah" ... dia sebagai "Class bapak" dalam program ini, memiliki sifat (void) seperti 
+- Nama buah
+- Tampil buah
+- dan Stok buah
+
+Dia bosan, bosan tak bisa berbagi kesedihan ataupun kebahagiaan setelah ditinggal sang istri. Akhirnya dia memutuskan untuk
+mengadopsi seorang anak di sebuah panti asuhan. anak itu diberi nama "Class Pedagang" .... 
+"Class Pedagang" memiliki sifat (void)
+- Nama toko
+- Tampil buah
+- Konstruktor pedagang
+- dan void main. 
+
+Sebagai bapak "Class Buah" ingin mewariskan setiap sifat yang dimilikinya kepada sang anak "Class Pedagang"
+beberapa sifat yang diwariskan antara lain :
+- Nama buah
+- Tampil buah
+- dan Stok buah
+
+sang anak tak ingin kalah dengan sifat sang ayah, akhirnya dia menemukan cara, membuat sifatnya sendiri dan digabung dengan sifat sang ayah
+dengan bantuan "Super" dan "Konstruktor". sang anak merasa bangga dengan sifat barunya tersebut
+
+Akhirnya mereka hidup bahagia, tamat.....
+
+Program java sederhana ini, hanya menampilkan data buah dan stok buah.
