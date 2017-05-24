@@ -1,0 +1,3 @@
+Kenapa memakai interface?
+Kita akan menggunakan interface jika kita ingin class yang tidak berhubungan mengimplementasikan method yang sama.
+dengan melalui interface kita dapat menangkap kemiripan diantara class yang tidak berhubungan, seolah class itu berhubungan.
