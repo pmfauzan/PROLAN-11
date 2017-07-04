@@ -1,0 +1,250 @@
+Ringkasan Materi Prolan
+Nama 		: M. Fauzan Putra
+NIM		: 10114012
+Kelas		: Prolan-11
+====================================================================
+Perkuliahan  	: 1
+Materi 		: Pendahuluan
+--------------------------------------------------------------------
+'Peraturan perkuliahan
+'Pengenalan bahasa pemograman dengan java
+'pengenalan oop
+'Membuat tampilan "Hello World" dalam bahasa Java
+'Menjalankan java melalui cmd bukan aplikasi netbeans
+--------------------------------------------------------------------
+'java adalah bahasa pemograman tingkat tinggi yang berorientasi pada objek, yang tersusun dari bagian yang disebut class(kelas)
+ berisi method yang melakukan aksi - aksi tertentu
+'OOP (Object Oriented Programming), adalah suatu metode pemograman yang berorientasi kepada objek. tujuan dari OOP. adalah
+ untuk mempermudah membangun satu program dengan model yang sudah ada di kehidupan sehari-hari.
+'Java bisa dijalankan melalui cmd tidak hanya dijalankan melalui netbeans, atau aplikasi bahasa pemograman. 
+====================================================================
+Perkuliahan  	: 2
+Materi 		: Konsep OOP
+--------------------------------------------------------------------
+'Menjelaskan cara penggunaan konsep OOP
+'Menggunakannya dalam java.
+'Pengenalan input output.
+--------------------------------------------------------------------
+'Konsep OOP bisa kita lihat dalam kehidupan sehari-hari, contohnya Manusia. Manusa bisa makan, jalan, tidur, atau hewan
+ Hewan bisa makan, lari, tidur, atau Mahasiswa, mahasiswa memiliki, nim, nama dan kelas.
+'Menggunakan Objek mahasiswa sebagai konsep OOP, dan digunakan untuk dijadikan program dalam bahasa pemograman java.
+'Menggunakan fungsi Scanner, untuk menginputkan data masukan dari user. Sebelum menggunakan input, ada beberapa cara yang
+ harus dilakukan, tidak seperti bahasa pemograman yang lain yang bisa langsung menginputkan tanpa harus meng-import method.
+ di java kita harus meng-import method scanner terlebih dahulu.
+	"import java util.Scanner"
+ barulah kita bisa menggunakan metode input.
+ contoh
+ 	import java.util.Scanner;
+
+	class InputOutput{
+		public static void main (String[] args){
+		Scanner input = new Scanner (System.in);
+		String nama;
+	
+		nama = input.nextLine();
+		}
+	}
+
+====================================================================
+Perkuliahan  	: 3
+Materi 		: Kelas dan Objek
+--------------------------------------------------------------------
+'Pengenalan kelas dan objek
+'Pengenalan tipe data
+'Menganalisis objek untuk dijadikan project di github.
+--------------------------------------------------------------------
+'pengenalan tentang kelas dan objek, aturan dimana nama kelas harus sama dengan nama file.
+ dan nama kelas harus menggunakan huruf kapital lalu di ikuti dengan nama objek
+	"Mahasiswa rendy{}"
+'pengenalan tipe data, tipe data dibagi dua, tipe data primitif dan tipe data bentukan
+	-tipe data primitif-    -tipe data bentukan-
+	 integer		 array		 
+	 long			 string
+	 double
+	 char
+	 boolean
+
+====================================================================
+Perkuliahan  	: 4
+Materi 		: Konstraktor
+--------------------------------------------------------------------
+'Pengenalan dan penggunaan kosntraktor pada java.
+'Pengenalan dan penggunaan this
+--------------------------------------------------------------------
+'konstraktor adalah sebuah prosedur yang muncul saat objek dibuat.
+ nama konstruktor harus sama dengan nama kleas
+ contoh : 
+		public class Mahsiswa{
+		  String nama;
+		  Mahasiswa (){        //Konstraktor
+			nama = "Rendy"
+		}
+
+'This digunakan untuk membedakan variabel global jika variabel tersebut memiliki nama yang sama dengan variabel lokal.
+contoh :  	
+		public class PenggunaanThis{
+		  String nama;  		            <--Variabel global
+		  private void namaMahasiswa (String nama){
+		     this.nama = nama;			    <--Penggunaan this
+		  }
+		}
+====================================================================
+Perkuliahan  	: 5
+Materi 		: Inheritance
+--------------------------------------------------------------------
+'Pengertian dan Penggunaan inheritance dalam java.
+'penggunaan keyword "super"
+--------------------------------------------------------------------
+'Inheritance merupakan sebuah konsep, dimana memmungkinkan kita mmebuat kelas yang sudah diturunkan dari kelas lain dan 
+ menggunakan ulan kode untuk mempercepat proses implementasi.
+ Syarat sebelum melakukan konsep ini adalah, class harus bersifat public/protected. tidak boleh bersifat private.
+ Penggunaan inheritance adalah dengan keywoard "extends"
+ Contoh :
+	public class anak extends bapak{}
+
+'penggunaan super, pada dasarnya penggunaan super sama dengan penggunaan kthis. hanya saja super digunakan untuk memanggil atau
+ membedakan method yang memiliki nama yang sama.
+ contoh : 
+	class Hewan {
+	  public void makan{
+		//isi method
+	  }
+	}
+
+ 	class ayam extends hewan{
+	  @override
+	  public void makan(){
+		//isi method
+		super.makan();     ---> penggunaan keyword super
+	  }
+	}
+
+====================================================================
+Perkuliahan  	: 6 - 7
+Materi 		: Overiding
+--------------------------------------------------------------------
+'Penggunaan Overiding
+'pengenalan pholimorpisme
+'Mengimplementasikan overiding pada tugas yang sudah dibuat sebelumnya.
+--------------------------------------------------------------------
+'Overiding merupakan proses memodifikasi hasil dari pewarisan.
+'Pholimorpisme merupakan suat konsep yang menyatakan sesuatu yang sama memiliki bnayak bentuk.
+'methood dengan akses final dan private tidak bisa di overriding.
+Contoh : 
+	class Hewan {
+	  public void makan{
+		//isi method
+	  }
+	}
+
+ 	class ayam extends hewan{
+	  @override
+	  public void makan(){
+		//isi method
+		super.makan();     ---> makan dari class hewan
+	  }
+	}
+====================================================================
+Perkuliahan  	: 8
+Materi 		: UTS
+--------------------------------------------------------------------
+-null
+====================================================================
+Perkuliahan  	: 9
+Materi 		: Abstraksi
+--------------------------------------------------------------------
+'Pengenalan dan penggunaan method abstrak
+--------------------------------------------------------------------
+'Abstrak merupakan method yang tidak memiliki implementasi method, kelas abstrak hanya digunakan untuk membuat sebuah objek
+'kelas abstrak ditunjukkan dengan keywoard "abstract"
+'kelas absrak dibuat untuk agar pengguna dapat membuat sendiri implementasi method sesuai kebutuhan.
+ contoh : 
+	public abstract Mahasiswa{
+	  public abstract void Nama(); <--- abstrak method
+	
+	}
+====================================================================
+Perkuliahan  	: 10
+Materi 		: Enkapsulasi
+--------------------------------------------------------------------
+'pengenalan dan penggunaan enkapsulasi
+--------------------------------------------------------------------
+'Enkapsulasi adalah suatu cara untuk menyembunyikan implementasi detil dari class untu kencegah akses yang sembarang.
+ Enkapsulasi bisa disebut juga sebagi information hiding, caranya hanya memberikan modifier private pada variabel yang
+ ingin kita hiding(Sembunyikan).
+ contoh : 
+	public class Enkapsulasi{
+	   public static void main(String[]args){
+	   	Enkapsulasi enkap =  new Enkapsulasi();
+	   	enkap.setNama("rendy");
+	   	System.out.println(enkap.getNama());
+	   }
+	}
+====================================================================
+Perkuliahan  	: 11
+Materi 		: Interface
+--------------------------------------------------------------------
+'Pengenalan dan Pengunaan interface 
+'Perbandingan interface denga abstrak method
+--------------------------------------------------------------------
+'Pada java, interface merupakan tipe data bentukan yang mirip dengan kelas
+'Interface berisi sekumpulan method yang berisfat abstrak
+'interface dapat di implementasikan dengan keyword "implements
+ contoh : 
+	public class Nuklir implements Power {}
+====================================================================
+Perkuliahan  	: 12
+Materi 		: Generic
+--------------------------------------------------------------------
+'Pengenalan kelas Generik
+'Membuat kelas generik
+--------------------------------------------------------------------
+'Kelas generik adalah kelas yang universal atau umum, belum ada spesifikasi tipe pada data dan fungsi pada kelas tersebut.
+'kelas generik pada java ditentukan sebagai parameter tipe.
+ pada saat runtime, tipe yang digunakan adalah tipeyang dtentukan pada saat deklarasi objek.
+ dengan kelas generik kita dapat mengeplisitkan parameter.
+ contoh : 
+	public class Manusia <T> {} 
+	<>        <-- Diamond merupakan ciri dari kelas generik.
+ isi dari <> dapat diisi sesuai keinginnan, tetapi biasanya mengikuti aturan.
+ seperti : T atu E.
+ nama tipe generik sebaiknya menggunakan huruf kapital.
+ T : Type
+ E : Element
+ K : Key
+ N : Number
+ V : Value
+
+====================================================================
+Perkuliahan  	: 13
+Materi 		: Generic Method
+--------------------------------------------------------------------
+'Pengenalan dan penggunaan Method Generik
+--------------------------------------------------------------------
+'jika sebelumnya menggunakan generik pada kelas, kali ini menggunakan generik pada method. aturan dan cara kerja sama
+ seperti menggunakan generik pada kelas.
+ menggunakan diamond <>
+ contoh : 
+	public <T> void Mahasiswa (T[] a){
+	  for(Object o : a){
+	     system.out.println(o);
+	  }
+	}
+====================================================================
+Perkuliahan  	: 14
+Materi 		: Package
+--------------------------------------------------------------------
+'Pengenalan dan Penggunaan Package
+'Membuat 10 package, 1 package berisi 10 class. total 100 class.
+--------------------------------------------------------------------
+'Sesuai namanya, package digunakan untuk membungkus kelas atau interface tertentu, guna menghindari konflik persamaan kelas
+ ataupun interface.
+ meng-implementasikan package dapat ditulis dengan keyword "package" ditulis di baris paling pertama.
+ contoh : 
+	package mahasiswa
+  	
+	public class Mahasiswa{}
+
+'penulisan nama package sebaikanya menggunakan huruf kecil, untuk mencegah konfil dengan nama kelas.
+
+
