@@ -1,0 +1,39 @@
+Nama 	:M. Fauzan Putra
+Nim	: 10114012
+Kelas 	:Prolan - 11.
+--------------------------------------------------------------
+Program Pedagang buah. (Neatbeans)
+'Program ini dibuat dengan menggunakan konsep pedagang buah, dimana kita bisa memilih buah yang hendak kita beli.
+ di program ini terdapat beberapa inputtan yang harus dimasukkan, diantaranya
+ memilih menu, memilih buah, dan banyak buah yang dipesan.
+ 
+'Cara menggunakan program ini
+ a. User diminta memilih menu pilihan 1 - 5
+	1. Buah biasa
+	2. Buah setan
+	3. buah dewa
+	4. info toko
+	5. keluar
+ b. Setelah memilih kategori menu, user akan mendapatkan pilihan lagi, berupa buah apa saja yang termasuk
+    kedalam kategori tersebut
+	contoh : kategori buah biasa berisi buah alpukat, durian, apel.
+		 kategori buah setan berisi buah gomu gomu, supa supa, dan lain-lain.
+ c. Setelah memilih buah user akan diminta berapa banyak buah yang dipesan dalam satuan berat Kilogram(Kg).
+ d. Setiap buah memiliki harga yang berbeda.
+ e. harga buah akan dikalikan dengan jumlah berat yang dipesan.
+ f. program akan menghitung total biaya yang harus dibayarkan user, setelah selesai
+    program akan kembali memunculkan pilihan "ingin memesan lagi atau tida"
+ g. Jika jawaban "y" maka program akan mengulang dari awal.
+    Jika jawaban "t" maka program akan berhenti mengesekkusi.
+--------------------------------------------------------------
+'Keterkaitan dengan OOP.
+ -Inheritance(Pewarisan), pewarisan dimiliki oleh kelas "Nama.java" yang mewariskan sifat ke kelas "Pedagangnama.java".
+ -Overriding, ada beberapa method yang di override, diantaranya method "void manfaatApel" pada kelas "Manfaat.java
+ -Abstraksi, Kelas yang dijadikan kelas abstrak adalah kelas "Manfaat.java" yang mengimplement method dari kelas "Tentangmanfaat.java"
+ -Interface, Kelas yang dijadikan kelas interface adalah kelas "Tentangmanfaat.java" yang berisi method kosong tentang manfaat buah.
+ -Enkapsulasi, kelas yang fungsi nya di enkapsulasi adalah kelas "InfoToko.java" dimana kita akan menentukan info toko.
+ -Generic, kelas yang mengalami generic adalah kelas "Kodetoko<T>.java" selain kelas yang digeneric, method nya pun di generic.
+ -Package, Program ini memiliki dua package, 
+	1. Package pedagang yang berisi 8 kelas
+	2. Package buah yang berisi 2 kelas.
+--------------------------------------------------------------
